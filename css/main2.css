@@ -1,0 +1,562 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+@font-face {
+  font-family: vazir;
+  src: url(../font/Vazir-Regular.woff2);
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: end;
+  background-image: url(../media/desktop-header-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fbf8f9;
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 0 0 24px 24px;
+  /* background-color: rgb(235, 235, 235); */
+  height: 450px;
+  > .btn {
+    width: 1000px;
+    height: 150px;
+    margin-top: 8px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    > .b {
+      background-color: white;
+      width: 120px;
+      height: 40px;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      > a {
+        text-decoration: none;
+        color: #3e3e3e;
+        font-family: vazir;
+        font-size: 16px;
+      }
+    }
+    > .a {
+      width: 120px;
+      height: 40px;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1cb65d;
+      cursor: pointer;
+      > a {
+        text-decoration: none;
+        font-family: vazir;
+        font-size: 18px;
+        color: white;
+      }
+    }
+  }
+  > .text1 {
+    font-family: vazir;
+    color: #3e3e3e;
+    width: 600px;
+    font-size: 14px;
+    justify-content: end;
+    padding-right: 50px;
+    margin-top: 45px;
+    display: flex;
+  }
+  > .text2 {
+    font-family: vazir;
+    color: #3e3e3e;
+    width: 600px;
+    justify-content: end;
+    padding-right: 50px;
+    font-size: 50px;
+    display: flex;
+    > p > span {
+      color: #e10a0a;
+    }
+  }
+  > .text3 {
+    font-family: vazir;
+    color: #0d1b36;
+    font-size: 20px;
+    width: 800px;
+    justify-content: end;
+    padding-right: 50px;
+    margin-top: 8px;
+    display: flex;
+  }
+  > ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+    width: 55%;
+    height: 70px;
+    justify-content: start;
+    > a {
+      text-decoration: none;
+      font-size: 16px;
+      font-family: vazir;
+      color: #3e3e3e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+      transition: all linear 300ms;
+      cursor: pointer;
+      > li {
+        display: flex;
+        align-items: center;
+      }
+      > li > img {
+        width: 100px;
+        height: 24px;
+      }
+    }
+  }
+}
+.section1 {
+  width: 75%;
+  margin-top: 20px;
+  margin: 0 auto;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+  > .part1 {
+    width: 20%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 25px 0;
+    > p#title {
+      font-size: 20px;
+      color: #3e3e3e;
+      font-family: vazir;
+    }
+    > p#title2 {
+      font-size: 14px;
+      direction: rtl;
+      color: #3e3e3e;
+      font-family: vazir;
+    }
+  }
+}
+.section2 {
+  width: 450px;
+  height: 40px;
+  margin: 0 auto;
+  border: 2px solid #e10a0a;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  > .capsol1 {
+    width: 225px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e10a0a;
+    font-family: vazir;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+  }
+  > .capsol2 {
+    width: 225px;
+    height: 40px;
+    background-color: #e10a0a;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: vazir;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+.section3 {
+  font-family: vazir;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  flex-direction: column;
+  font-size: 20px;
+  color: #3e3e3e;
+  > p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 2px;
+  }
+}
+@font-face {
+  font-family: vazirs;
+  src: url(../font/IRANSansXFaNum-Black.woff2);
+}
+.section4 {
+  width: 75%;
+  height: 600px;
+  border-radius: 16px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  > .part1 {
+    height: 550px;
+    width: 380px;
+    padding: 32px 24px 24px;
+    border: 1px solid #d2d2d2;
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    >button{
+      width: 200px;
+      background-color: #1cb65d;
+      height: 35px;
+      border: none;
+      color: white;
+      font-family: vazirs;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 20px;
+    }
+    >.image > img {
+      height: 100%;
+      width: 100%;
+    }
+    > p#first {
+      font-family: vazir;
+      font-size: 12px;
+      color: #7a7a7a;
+      margin-top: 10px;
+    }
+    > p#sec3 {
+      font-family: vazirs;
+      font-size: 25px;
+      color: #414141;
+      margin-top: 30px;
+      margin-bottom: 35px;
+    }
+    > p#sec2 {
+      font-family: vazirs;
+      font-size: 25px;
+      color: #414141;
+      margin-top: 30px;
+      margin-bottom: 35px;
+    }
+    > p#sec1 {
+      font-family: vazirs;
+      font-size: 25px;
+      color: #414141;
+      margin-top: 30px;
+      margin-bottom: 35px;
+    }
+    >#last{
+      margin-bottom: 50px;
+    }
+    >#last1{
+      margin-bottom: 50px;
+    }
+    >#last2{
+      margin-bottom: 50px;
+    }
+    > .polic1 {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      height: 44px;
+      width: 100%;
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      > .partl {
+        font-family: vazirs;
+        font-size: 16px;
+        padding-right: 10px;
+        color: #4a4a4a;
+      }
+      > .partr {
+        direction: rtl;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        font-family: vazir;
+        font-size: 14px;
+        color: #7a7a7a;
+        > hr {
+          margin: 0 5px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}
+.section5 {
+  width: 100%;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  background-color: #c93333;
+  > .part3 {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    > img {
+      width: 141px;
+      height: 20px;
+      margin-right: auto;
+      margin-left: 110px;
+    }
+  }
+  > .part1 {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    > img {
+      width: 141px;
+      height: 20px;
+      margin-left: auto;
+      margin-right: 110px;
+    }
+  }
+  .part2 {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+    > .box {
+      height: 250px;
+      width: 350px;
+      background-color: #fff;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      > input {
+        border: unset;
+        height: 45px;
+        border-radius: 4px;
+        background-color: #f4f4f4;
+        width: 300px;
+        margin-top: 10px;
+        font-family: vazir;
+        direction: rtl;
+        padding-right: 15px;
+        font-size: 17px;
+        outline: none;
+      }
+      > .submit {
+        border: unset;
+        height: 35px;
+        border-radius: 4px;
+        background-color: #1cb65d;
+        color: white;
+        font-family: vazir;
+        width: 300px;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+    }
+    .box1 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: end;
+      > p#box1 {
+        font-size: 30px;
+        font-weight: 600;
+        font-family: vazir;
+        color: white;
+        direction: rtl;
+      }
+      > p#box2 {
+        font-size: 17px;
+        font-weight: 500;
+        margin-top: 5px;
+        font-family: vazir;
+        color: white;
+        direction: rtl;
+      }
+    }
+  }
+}
+.section6 {
+  background-color: #bf2d2d;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  p#f {
+    color: white;
+    direction: rtl;
+    font-family: vazirs;
+  }
+  p#c {
+    color: white;
+    direction: rtl;
+    font-family: vazir;
+    font-size: 18px;
+  }
+}
+.section7 {
+  width: 75%;
+  height: 80px;
+  background-color: #f9f9f9;
+  border-radius: 16px 16px 0 0;
+  margin: 20px auto 0;
+  font-family: vazirs;
+  color: #4e4e4e;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section8 {
+  width: 75%;
+  height: 210px;
+  background-color: #f9f9f9;
+  border-radius: 0 0 16px 16px;
+  margin: 0 auto 20px;
+  font-family: vazirs;
+  color: #4e4e4e;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  > .arrow {
+    width: 48px;
+    height: 48px;
+    margin: 0 0 16px;
+    > img {
+      width: 42px;
+      height: 27px;
+    }
+  }
+  > .part1 {
+    width: 128px;
+    height: 183px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    > img {
+      width: 80px;
+      height: 75px;
+      margin: 0 0 44px;
+    }
+    > p {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
+.section9 {
+  width: 75%;
+  height: 80px;
+  background-color: #ffffff;
+  margin: 20px auto 0;
+  font-family: vazirs;
+  color: #4e4e4e;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section10 {
+  width: 75%;
+  height: 100px;
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  margin: 15px auto 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+  font-family: vazir;
+  cursor: pointer;
+  font-size: 17px;
+  transition: all linear 300ms;
+  > img {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    transition: all linear 300ms; 
+  }
+}
+.section10 > .ul {
+  display: block; /* یا می‌توانید از display: flex استفاده کنید */
+  margin-top: 10px; /* فاصله بین .section10 و .ul */
+}
+.section11 {
+  width: 75%;
+  height: 100px;
+  background-color: #c93333;
+  border-radius: 16px 16px 0 0;
+  margin: 15px auto 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+  font-family: vazir;
+  font-size: 17px;
+  .part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    > img {
+      cursor: pointer;
+    }
+    > p {
+      font-size: 15px;
+      color: white;
+      font-family: vazir;
+    }
+  }
+  .part1 {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    > hr {
+      height: 15px;
+    }
+  }
+}
